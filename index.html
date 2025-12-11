@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holyva | Taste That Loves Your Body Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"DM Serif Display"', 'serif'],
+              sans: ['"Outfit"', 'sans-serif'],
+            },
+            colors: {
+              holyva: {
+                primary: '#2C1810',    // Deep Espresso / Dark Chocolate
+                secondary: '#3E2723',  // Lighter Chocolate
+                accent: '#C5A059',     // Antique Gold / Crust
+                cream: '#F9F5F0',      // Warm Alabaster / Mascarpone
+                text: '#4A3B32',       // Mocha Text
+                muted: '#8D6E63',      // Cocoa Dust
+                surface: '#FFFFFF',    // Pure White
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'spin-slow': 'spin 12s linear infinite',
+              'slide-up': 'slideUp 0.5s ease-out forwards',
+              'gradient-x': 'gradient-x 15s ease infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'right center'
+                },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #F9F5F0; /* Warm Cream background */
+        color: #2C1810; /* Espresso text */
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .glass-card {
+        background: rgba(44, 24, 16, 0.95); /* Espresso tint */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(197, 160, 89, 0.2); /* Gold border */
+        color: white;
+      }
+      /* Premium Backgrounds */
+      .animated-bg {
+        /* Subtle Cream/Beige gradient */
+        background: linear-gradient(-45deg, #F9F5F0, #F0EBE0, #FAF3E0, #FCF8F5);
+        background-size: 400% 400%;
+        animation: gradient-x 15s ease infinite;
+      }
+      .animated-bg-dark {
+        /* Rich Chocolate/Espresso gradient */
+        background: linear-gradient(-45deg, #2C1810, #3E2723, #1A0F0D, #4E342E);
+        background-size: 400% 400%;
+        animation: gradient-x 15s ease infinite;
+      }
+      .animated-bg-gold {
+        /* Soft Gold/Latte gradient */
+        background: linear-gradient(-45deg, #F5F1E6, #EFE5D5, #E6DCC3, #F9F5F0);
+        background-size: 400% 400%;
+        animation: gradient-x 15s ease infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
