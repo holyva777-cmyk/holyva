@@ -4,8 +4,9 @@
 */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { BakeryScene } from './components/QuantumScene';
-import { ProductCard, PromiseCard, SectionTitle, ContactForm, BlogCard, TestimonialCard } from './components/Diagrams';
+import BakeryScene from './BakeryScene'; // Changed from './components/BakeryScene'
+import ProductCard, { ProductCardData, SectionTitle, ContactForm, BlogCard, TestimonialCard } from './Diagrams'; // Changed from './components/Diagrams'
+import QuantumScene from './QuantumScene'; // Changed from './components/QuantumScene'
 import { Menu, X, MapPin, Instagram, Facebook, Phone, Heart, Leaf, Award, ShieldCheck, ChevronRight, Search, Clock, ArrowRight, Play, ChevronLeft } from 'lucide-react';
 import { Page, MenuItem, BlogPost } from './types';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
